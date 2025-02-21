@@ -130,6 +130,7 @@ public class Oktagon {
     }
 
     public void loadAllMatches() {
+        int test = 5;
         scrollToBottom();
         while (true) {
             try {
