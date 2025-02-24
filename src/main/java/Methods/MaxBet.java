@@ -179,33 +179,6 @@ public class MaxBet {
         js.executeScript("arguments[0].scrollTop += arguments[1]", homeContainer, 50000);
     }
 
-    /*private static void scrollAllScrollableDivsBy500(WebElement element) {
-        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-
-        // Get all nested div elements
-        List<WebElement> nestedDivs = element.findElements(By.tagName("div"));
-
-        for (int i = 0; i < 25; i++) {
-            WebElement nestedDiv = nestedDivs.get(i);
-
-            // Check if the nested div can be scrolled
-            Boolean canScroll = (Boolean) jsExecutor.executeScript(
-                    "return arguments[0].scrollHeight > arguments[0].clientHeight;", nestedDiv);
-
-            // If the nested div can be scrolled, scroll it into view
-            if (canScroll) {
-                jsExecutor.executeScript("arguments[0].scrollIntoView(true);", nestedDiv);
-                System.out.println("Scrolled the scrollable nested div at index " + i + " into view.");
-            }
-
-            // Print information about the nested div
-            System.out.println("Nested div " + i + ":");
-            System.out.println("  ScrollHeight: " + jsExecutor.executeScript("return arguments[0].scrollHeight;", nestedDiv));
-            System.out.println("  ClientHeight: " + jsExecutor.executeScript("return arguments[0].clientHeight;", nestedDiv));
-            System.out.println("  Can Scroll: " + canScroll);
-            System.out.println();
-        }
-    }*/
     public void scroll2(){
         WebElement scrollableDiv = driver.findElement(By.xpath("/html/body/app-root/ng-component/ion-app/div/ds-main-layout/ds-main-layout-desktop/ion-row/ion-row/div[2]"));
 
@@ -217,8 +190,6 @@ public class MaxBet {
         actions.perform();
     }
     public void maxbet1() {
-        //driver.get("https://www.maxbet.rs/leagues/S");
-        //driver.manage().window().setSize(new Dimension(1936, 1056));
         driver.findElement(By.cssSelector("#league_136866 .ion-no-margin .sc-ion-label-ios-h")).click();
         driver.findElement(By.cssSelector("#league_136867 .ion-no-margin .sc-ion-label-ios-h")).click();
         driver.findElement(By.cssSelector("#league_180457 .ion-no-margin .sc-ion-label-ios-h")).click();

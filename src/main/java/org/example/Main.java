@@ -14,8 +14,6 @@ public class Main {
     static MaxBet maxbet = new MaxBet(MaxBetDriver);
     static Oktagon oktagon = new Oktagon(OktagonDriver);
 
-    //static Companies companies = new Companies(OktagonDriver);
-
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newFixedThreadPool(2);
 
